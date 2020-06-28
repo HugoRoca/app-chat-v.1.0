@@ -7,7 +7,7 @@
 3. after install this:
 
 ```
-npm i react-router socker.io-client react-scroll-to-bottom react-emoji query-string
+npm i react-router socket.io-client react-scroll-to-bottom react-emoji query-string
 ```
 
 4. install this dependencies in other folder "server": 
