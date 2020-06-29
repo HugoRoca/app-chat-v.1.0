@@ -9,11 +9,43 @@
 3. after install this:
 
 ```
-npm i react-router socket.io-client react-scroll-to-bottom react-emoji query-string
+$ npm i react-router socket.io-client react-scroll-to-bottom react-emoji query-string
 ```
 
 4. install this dependencies in other folder "server": 
 
 ```
-npm i cors nodemon express socket.io
+$ npm i cors nodemon express socket.io
+```
+
+5. for deploy `server` in heroku
+
+```
+$ heroku login
+
+$ cd my-project/
+$ git init
+$ heroku git:remote -a hr-chatapp-v1
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+
+for existing repositories, simply add the heroku remote
+
+$ heroku git:remote -a hr-chatapp-v1
+```
+
+6. for deploy `client` in netlify
+
+```
+$ npm i netlify-cli -g
+
+$ netlify login
+
+for pre production
+$ netlify deploy // here url domain custom
+
+for production select folder, this case `build`
+$ netlify deploy --prod
 ```
